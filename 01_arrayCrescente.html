@@ -7,12 +7,13 @@
     */
 
     //ENTRADA
-const n1 = Number(prompt(`Informe um numero:`));
-const n2 = Number(prompt(`Informe um segundo numero:`));
+    const n1 = Number(prompt(`Informe um numero:`));
+    const n2 = Number(prompt(`Informe um segundo numero:`));
 
     //PROCESSAMENTO
-
-
+    let nrs = [n1, n2];
+    nrs.sort((n1,n2) => n1 - n2);
+alert(nrs);
     //SAÍDA
 
 </script>
