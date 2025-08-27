@@ -9,12 +9,21 @@
     */
 
     //ENTRADA
-let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remover = prompt(`Qual carro desta lista gostaria de remover? ("Tiggo", "Sportage", "Tucson", "EcoSport")`).toUpperCase();
 
 
     //PROCESSAMENTO
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const index = carrosSUV.indexOf(remover);
+    if (index > -1) {
+        carrosSUV.splice(index, 1);
+    }
+    console.log(carrosSUV);
 
     //SAÍDA
+
+    document.write(`A lista antiga de SUVs são:"Tiggo", "Sportage", "Tucson", "EcoSport"`);
+    document.write(`A nova lista sera: ${carrosSUV}`);
 
 </script>

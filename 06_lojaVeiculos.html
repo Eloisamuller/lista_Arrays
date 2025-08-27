@@ -7,17 +7,45 @@
     let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
     
-    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar 
+    o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     Apresente a lista final de cada tipo de veículo.
     */
 
-    //ENTRADA
+    
+ //ENTRADA
+   const car1 = prompt(`ìnforme um veiculo para serem adicionado a lista`);
+   const car2 = prompt(`ìnforme outro veiculo para serem adicionado a lista`);
+   const car3 = prompt(`ìnforme outro veiculo para serem adicionado a lista`);
+   const tipocarro = prompt(`informe o tipo do veiculo (SUV, Sedan ou Hatch")`).toUpperCase();
 
 
     //PROCESSAMENTO
+   let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
+    if (tipocarro === "SUV") {
+       carrosSUV.push(car1,car2,car3);
+    }
+    else if (tipocarro === "SEDAN") {
+        cassosSedan.push(car1,car2,car3);
+    }
+    else if (tipocarro === "HATCH") {
+        carrosHatch.push(car1,car2,car3);
+    }
+    else {
+        alert(`informe um valor valido`)
+    }
+    document.write(`A lista final é: ${carrosSUV}`);
+    document.write(`A lista final é:${cassosSedan}`);
+    document.write(`A lista final é: ${carrosHatch} `);
 
     //SAÍDA
+    document.write(`A lista final é:${carrosSUV}`);
+    document.write(`A lista final é:${cassosSedan}`);
+    document.write(`A lista final é: ${carrosHatch}`);
+
 
 </script>
